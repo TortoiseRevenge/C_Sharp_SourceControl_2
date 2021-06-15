@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 namespace C_Sharp_SourceControl_2
 {
@@ -9,7 +9,7 @@ namespace C_Sharp_SourceControl_2
             Console.WriteLine("Hello World!");
         }
 
-        public static void divisibleByThree(List<int> num)
+        public static int DivisibleByThree(List<int> num)
         {
             Console.WriteLine("Numbers Divisible by Three: ");
             foreach (int number in num)
@@ -17,7 +17,7 @@ namespace C_Sharp_SourceControl_2
    
                 if(number != 0 && number%3 == 0)
                 {
-                    Console.WriteLine(number);
+                    return number;
                 }
             }
           
