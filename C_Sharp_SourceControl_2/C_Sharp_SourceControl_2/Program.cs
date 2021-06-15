@@ -10,7 +10,7 @@ namespace C_Sharp_SourceControl_2
         }
         public void Fifth(List<int> num) {
             List<int> fives = new List<int>();
-            for (int x=0; x<fives.Count; x+=5) {
+            for (int x=5; x<fives.Count; x+=5) {
                     fives.Add(num[x]);
             }
             Console.WriteLine(fives);
