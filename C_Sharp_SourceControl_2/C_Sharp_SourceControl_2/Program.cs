@@ -11,7 +11,7 @@ namespace C_Sharp_SourceControl_2
 
         public static int DivisibleByThree(List<int> num)
         {
-            Console.WriteLine("Numbers Divisible by Three: ");
+            
             foreach (int number in num)
             {
    
@@ -20,7 +20,7 @@ namespace C_Sharp_SourceControl_2
                     return number;
                 }
             }
-          
-        }
+            return -1;
+         }   
     }
 }
