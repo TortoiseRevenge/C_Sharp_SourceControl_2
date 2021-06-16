@@ -4,11 +4,7 @@ namespace C_Sharp_SourceControl_2
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-
+     
         public static int DivisibleByThree(List<int> num)
         {
             
