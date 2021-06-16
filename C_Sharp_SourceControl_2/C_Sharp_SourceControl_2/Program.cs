@@ -51,6 +51,12 @@ namespace C_Sharp_SourceControl_2
                     DisplayList(DivisibleByThree(Numbers));
 
                 }
+                else if (InputStr == "f")
+                {
+                    Console.WriteLine("Displaying every fifth number: ");
+                    DisplayList(Fifth(Numbers));
+
+                }
                 else
                 {
                     Console.WriteLine("Failed");
@@ -114,12 +120,12 @@ namespace C_Sharp_SourceControl_2
             }
             return divByThree;
          }   
-        public void Fifth(List<int> num) {
+        public static List<int> Fifth(List<int> num) {
             List<int> fives = new List<int>();
             for (int x=4; x<fives.Count; x+=5) {
                     fives.Add(num[x]);
             }
-            Console.WriteLine(fives);
+            return fives;
         }
     }
 }
