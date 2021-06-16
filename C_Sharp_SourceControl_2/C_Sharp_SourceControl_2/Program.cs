@@ -42,7 +42,14 @@ namespace C_Sharp_SourceControl_2
                 }
                 else if (InputStr == "d")
                 {
+
                     DisplayList(Numbers);
+                }
+                else if (InputStr == "d3")
+                {
+                    Console.WriteLine("Displaying numbers divisible by three: ");
+                    DisplayList(DivisibleByThree(Numbers));
+
                 }
                 else
                 {
@@ -94,6 +101,19 @@ namespace C_Sharp_SourceControl_2
             }
             return result;
         }
+        public static List<int> DivisibleByThree(List<int> num)
+        { 
+            List<int> divByThree = new List<int>();
+            foreach (int number in num)
+            {
+   
+                if(number != 0 && number%3 == 0)
+                {
+                    divByThree.Add(number);
+                }
+            }
+            return divByThree;
+         }   
     }
 }
           
